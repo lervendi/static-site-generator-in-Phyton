@@ -1,7 +1,7 @@
 import os
 from generate_page import generate_page
 
-def generate_pages_recursive(dir_path_content, template_path, dest_dir_path):
+def generate_pages_recursive(dir_path_content, template_path, dest_dir_path, basepath="/"):
     names_list = os.listdir(dir_path_content)
     for name in names_list:
         src_path = os.path.join(dir_path_content, name)
