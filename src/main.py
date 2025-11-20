@@ -10,7 +10,7 @@ def main():
         basepath = "/"
 
     sync_static_public("static", "docs")
-    generate_page("content/index.md", "template.html", "docs/index.html")
-    generate_pages_recursive("content", "template.html", "docs")
+    generate_page("content/index.md", "template.html", "docs/index.html", basepath)
+    generate_pages_recursive("content", "template.html", "docs", basepath)
 
 main()
